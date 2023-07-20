@@ -1,0 +1,12 @@
+I forgot who am I.
+@showUI Quest
+@set "quest=\"Remember Name\""
+@hidePrinter 
+@input name summary:"Choose your name"
+@stop
+@showUI MiniMap
+@set "quest=\"open map\""
+@set "locationQuest=\"mountains\""
+@set mountainAvailable=true
+Clearly I {name}. I need go to mountins
+@stop
