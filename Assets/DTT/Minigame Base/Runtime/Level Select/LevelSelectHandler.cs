@@ -85,7 +85,6 @@ namespace DTT.MinigameBase.LevelSelect
                 _levelSelectCanvasGroup = _levelSelect.transform.root.gameObject.AddComponent<CanvasGroup>();
                 _levelDatabase.Load();
                 _levelSelect.Populate(_levelDatabase);
-                _levelSelect.LevelSelected += OnLevelSelected;
             };
         }
 
@@ -104,60 +103,19 @@ namespace DTT.MinigameBase.LevelSelect
         /// Starts the game at that level.
         /// </summary>
         /// <param name="levelData">The data of the level that was selected.</param>
-        protected virtual void OnLevelSelected(LevelData levelData)
+        protected virtual void OnLevelSelected(int difficultSelected)
         {
-            _currentLevel = levelData.levelNumber;
-            _minigame.StartGame(GetConfig(levelData.levelNumber));
-            HideLevelSelect();
+            _minigame.StartGame(GetConfig(difficultSelected));
         }
 
         /// <summary>
         /// Called when the minigame has finished with the result of the user.
-        /// Determines and saves a score to the database and unlocks the next level.
         /// </summary>
         /// <param name="result">The result of the user.</param>
         protected virtual void OnMinigameFinished(TResult result)
         {
             float score = CalculateScore(result);
-            int index = _levelSelect.SelectedLevel.LevelNumber - 1;
 
-            if (_levelDatabase.Data[index].score < score)
-            _levelDatabase.SetScore(index, score);
-
-            if(_levelSelect.SelectedLevel.LevelNumber < _levelDatabase.Data.Count)
-                _levelDatabase.SetLocked(_levelSelect.SelectedLevel.LevelNumber, false);
-
-            // Save all the progress in the file structure before population.
-            _levelSelect.Populate(_levelDatabase);
-            
-            if(_returnToLevelSelectOnFinish)
-                ShowLevelSelect();
-        }
-
-        /// <summary>
-        /// Fades out the level select UI.
-        /// </summary>
-        public override void HideLevelSelect()
-        {
-            LevelSelectClosed?.Invoke();
-            DTTween.Value(_levelSelectCanvasGroup.alpha, 0, 0.6f, 0, Easing.EASE_IN_OUT_QUAD, 
-                onValueChanged: (float val) => _levelSelectCanvasGroup.alpha = val);
-            
-            _levelSelectCanvasGroup.interactable = false;
-            _levelSelectCanvasGroup.blocksRaycasts = false;
-        }
-
-        /// <summary>
-        /// Fades in the level select UI.
-        /// </summary>
-        public override void ShowLevelSelect()
-        {
-            DTTween.Value(_levelSelectCanvasGroup.alpha, 1, 0.6f, Easing.EASE_IN_OUT_QUAD, 
-                onValueChanged: (float val) => _levelSelectCanvasGroup.alpha = val,
-                onComplete: LevelSelectOpened);
-            
-            _levelSelectCanvasGroup.interactable = true;
-            _levelSelectCanvasGroup.blocksRaycasts = true;
         }
         
         /// <summary>

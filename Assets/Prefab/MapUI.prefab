@@ -1,64 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &172647868839661687
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3243889848931347596}
-  - component: {fileID: 6920776168869786048}
-  m_Layer: 5
-  m_Name: Tooltip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3243889848931347596
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172647868839661687}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3536474647133946746}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6920776168869786048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172647868839661687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: 
-  scriptText: '@print "Lunenburg is the best surviving example of a planned British
-    colonial settlement in North America. Established in 1753, it has retained its
-    original layout and overall appearance, based on a rectangular grid pattern drawn
-    up in the home country." author:"Old Town" if:{arg} printer:Tooltip speed:2
-
-    @hidePrinter
-    Tooltip if:!{arg}'
-  playOnAwake: 0
-  disableWaitInput: 0
 --- !u!1 &287198285796501636
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +138,8 @@ MonoBehaviour:
   scriptName: 
   scriptText: '@hideUI Map
 
+    @showUI MiniMap
+
     @goto Forest'
   playOnAwake: 0
   disableWaitInput: 0
@@ -233,7 +176,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3243889848931347596}
   - {fileID: 6666332203114615742}
   - {fileID: 342055201337331184}
   - {fileID: 9122065408666190271}
@@ -370,7 +312,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6920776168869786048}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: Play
           m_Mode: 6
@@ -386,7 +328,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 6920776168869786048}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: Play
           m_Mode: 6
@@ -583,7 +525,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3712916252019868167}
   - {fileID: 8260644568847700911}
   - {fileID: 4211939072972490759}
   - {fileID: 5151375437607867204}
@@ -720,7 +661,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1290096759989357418}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: Play
           m_Mode: 6
@@ -736,7 +677,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1290096759989357418}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: Play
           m_Mode: 6
@@ -748,65 +689,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &5112569808591503397
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 978852746060878845}
-  - component: {fileID: 9030545439339274701}
-  m_Layer: 5
-  m_Name: Tooltip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &978852746060878845
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5112569808591503397}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7679812992550058061}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &9030545439339274701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5112569808591503397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: 
-  scriptText: '@print "The mighty chunks rise all over the world, including the oceans.
-    They usually have steep, sloping sides and sharp or rounded ridges, and a high
-    point, called a peak or summit. Most geologists classify a mountain as a landform
-    that rises at least 1,000 feet (300 meters) or more above its surrounding area."
-    author:Mountains if:{arg} printer:Tooltip speed:2
-
-    @hidePrinter Tooltip if:!{arg}'
-  playOnAwake: 0
-  disableWaitInput: 0
 --- !u!1 &5665931159888883109
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +740,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptName: 
   scriptText: '@hideUI Map
+
+    @showUI MiniMap
 
     @goto Town'
   playOnAwake: 0
@@ -982,7 +866,7 @@ MonoBehaviour:
   hideOnLoad: 1
   hideInThumbnail: 0
   saveVisibilityState: 1
-  blockInputWhenVisible: 1
+  blockInputWhenVisible: 0
   allowedSamplers:
   - Continue
   modalUI: 1
@@ -1397,67 +1281,9 @@ MonoBehaviour:
   scriptName: 
   scriptText: '@hideUI Map
 
-    @goto Mountain'
-  playOnAwake: 0
-  disableWaitInput: 0
---- !u!1 &8734044097058928262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3712916252019868167}
-  - component: {fileID: 1290096759989357418}
-  m_Layer: 5
-  m_Name: Tooltip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3712916252019868167
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8734044097058928262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2367219415161449531}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1290096759989357418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8734044097058928262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: 
-  scriptText: '@print "The trees in the forest were malady-brown. Grains of poison
-    begrimed the bark and gleamed like witch dust. Trolls haunted the sooty coppices,
-    salivating over their prey and smearing the blood over their heavy faces. The
-    decaying air and stifling atmosphere provided the perfect abode for those who
-    worshipped the darkness rather than the light." author:"Dark Forest" if:{arg}
-    printer:Tooltip speed:2
+    @showUI MiniMap
 
-    @hidePrinter Tooltip if:!{arg}'
+    @goto Mountain'
   playOnAwake: 0
   disableWaitInput: 0
 --- !u!1 &8891478266830989253
@@ -1586,7 +1412,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 978852746060878845}
   - {fileID: 3773654517468972043}
   - {fileID: 6811013559612932141}
   - {fileID: 5404254206825307438}
@@ -1723,7 +1548,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 9030545439339274701}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: Play
           m_Mode: 6
@@ -1739,7 +1564,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 9030545439339274701}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: Play
           m_Mode: 6

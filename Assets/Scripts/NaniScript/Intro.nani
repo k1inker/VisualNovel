@@ -2,11 +2,20 @@ I forgot who am I.
 @showUI Quest
 @set "quest=\"Remember Name\""
 @hidePrinter 
-@input name summary:"Choose your name"
+@input name summary:"Choose name"
 @stop
-@showUI MiniMap
+Clearly I {name}. I need go to mountins[skipInput]
 @set "quest=\"open map\""
-@set "locationQuest=\"mountains\""
+@showUI MiniMap
+@set locationQuest="mountains"
 @set mountainAvailable=true
-Clearly I {name}. I need go to mountins
+@choice "I noob is this game" goto:MinigameEasy
+@choice "I pro game" goto:MinigameHard
 @stop
+
+# MinigameEasy
+Ye go Learning
+@showUI MiniGame
+# MinigameHard
+no listen
+@showUI MiniGame

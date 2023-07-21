@@ -170,17 +170,11 @@ MonoBehaviour:
     - name: MiniMap
       pathPrefix: UI
       guid: 91b429d80b363f94da7ca44e2646286b
-    - name: Tooltip
-      pathPrefix: UI
-      guid: ed221db7d8b74d04c9de3e9e76768f77
   - Id: Scripts
     Resources:
     - name: Mountain
       pathPrefix: Scripts
       guid: 9391d5e5d7ed1334c9ba658ee162f3c3
-    - name: Map
-      pathPrefix: Scripts
-      guid: 1bc1515f8c853994ea914dafc6b9d04f
     - name: Canyon
       pathPrefix: Scripts
       guid: d6971be909abc3f44b3a49754c29c306

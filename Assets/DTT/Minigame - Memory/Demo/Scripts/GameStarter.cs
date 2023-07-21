@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using DTT.MinigameMemory;
 using System;
 
 namespace DTT.MinigameMemory.Demo
