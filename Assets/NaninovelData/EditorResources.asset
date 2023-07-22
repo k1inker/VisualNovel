@@ -170,6 +170,9 @@ MonoBehaviour:
     - name: MiniMap
       pathPrefix: UI
       guid: 91b429d80b363f94da7ca44e2646286b
+    - name: MiniGame
+      pathPrefix: UI
+      guid: 069528c2c8ad26949a448cdbc390a2b0
   - Id: Scripts
     Resources:
     - name: Mountain

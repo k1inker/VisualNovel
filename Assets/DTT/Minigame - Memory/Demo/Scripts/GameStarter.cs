@@ -33,12 +33,7 @@ namespace DTT.MinigameMemory.Demo
         /// <summary>
         /// Unsubscribes from the game finished event.
         /// </summary>
-        private void OnDisable() => _gameManager.Finish += StoreResults;
-
-        /// <summary>
-        /// Starts a new memory minigame.
-        /// </summary>
-        private void Start() => _gameManager.StartGame(_gameSettings);
+        private void OnDisable() => _gameManager.Finish -= StoreResults;
 
         /// <summary>
         /// Sums the existing results and the new results.

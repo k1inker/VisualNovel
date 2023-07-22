@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
-using DTT.MinigameBase.Timer;
+using Timer = DTT.MinigameBase.Timer.Timer;
+using UnityEngine.Events;
 
 namespace DTT.MinigameMemory
 {
@@ -50,16 +51,22 @@ namespace DTT.MinigameMemory
         /// Starts the game with the given settings.
         /// </summary>
         /// <param name="settings">The settings used for this play session.</param>
-        public void StartGame(MemoryGameSettings settings)
+        public void StartGame()
         {
-            _settings = settings;
             _amountOfTurns = 0;
             _timer.Begin();
 
             _board.SetupGame(_settings);
             Started?.Invoke();
         }
-
+        /// <summary>
+        /// Finishes the current game.
+        /// </summary>
+        public void ForceFinish()
+        {
+            _timer.Stop();
+            Finish?.Invoke(new MemoryGameResults(_timer.TimePassed, _amountOfTurns));
+        }
         /// <summary>
         /// Adds a <see cref="Timer"/> to the gameobject if there was not timer assigned.
         /// </summary>
@@ -71,6 +78,7 @@ namespace DTT.MinigameMemory
         private void OnEnable()
         {
             _board.CardsTurned += IncreaseTurnAmount;
+            _board.AllCardsMatched += ForceFinish;
         }
 
         /// <summary>
@@ -79,6 +87,7 @@ namespace DTT.MinigameMemory
         private void OnDisable()
         {
             _board.CardsTurned -= IncreaseTurnAmount;
+            _board.AllCardsMatched -= ForceFinish;
         }
 
         /// <summary>
