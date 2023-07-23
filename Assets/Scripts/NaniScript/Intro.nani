@@ -11,15 +11,22 @@ Clearly I {name}. I need go to mountins[skipInput]
 @set "quest=\"open map\""
 @set locationQuest="mountains"
 @set mountainAvailable=true
-@choice "I noob is this game" goto:.Minigame
-@choice "I pro game" goto:.Minigame
+@hidePrinter 
+@choice "I noob is this game" goto:.MinigameEasy
+@choice "I pro game" goto:.MinigameHard
 @stop
 
-# Minigame
+# MinigameEasy
+@set difficultGame=0
+@goto .Game
+# MinigameHard
+@set difficultGame=1
+# Game
+@set "quest=\"Win GetName\""
 @hidePrinter 
 @hideUI MiniMap
-@showUI MiniGame
+@showUI MiniGame wait:true
+
 
 @stop
-
-alright enought
+alright enought {resultGame}

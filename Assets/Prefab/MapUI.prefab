@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24c749d0c675d3940923d50f77b241d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableInteraction: 0
+  disableInteraction: 1
   visibleOnAwake: 0
   controlOpacity: 1
   fadeTime: 0.3

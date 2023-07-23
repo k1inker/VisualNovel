@@ -12,6 +12,7 @@ public class EnableQuestLocation : MonoBehaviour
     }
     public void EnableQuestSign()
     {
+
         string selectLocation = _variableManager.GetVariableValue("locationQuest");
         Debug.Log(selectLocation);
         if ("mountains" == selectLocation)

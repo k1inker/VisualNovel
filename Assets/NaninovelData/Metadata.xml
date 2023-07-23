@@ -321,6 +321,8 @@
       &lt;string&gt;name&lt;/string&gt;
       &lt;string&gt;quest&lt;/string&gt;
       &lt;string&gt;locationQuest&lt;/string&gt;
+      &lt;string&gt;resultGame&lt;/string&gt;
+      &lt;string&gt;difficultGame&lt;/string&gt;
     &lt;/Variables&gt;
     &lt;Functions /&gt;
   &lt;/Metadata&gt;

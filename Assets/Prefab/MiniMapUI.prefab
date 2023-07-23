@@ -266,7 +266,7 @@ MonoBehaviour:
       m_Calls: []
   hideOnLoad: 1
   hideInThumbnail: 0
-  saveVisibilityState: 1
+  saveVisibilityState: 0
   blockInputWhenVisible: 0
   allowedSamplers: []
   modalUI: 0

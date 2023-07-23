@@ -33,3 +33,7 @@ MonoBehaviour:
     value: '""'
   - name: locationQuest
     value: '""'
+  - name: resultGame
+    value: 0
+  - name: difficultGame
+    value: 0
