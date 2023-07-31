@@ -246,9 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _board: {fileID: 2606972262683984320}
   _timer: {fileID: 6072646158527526623}
-  _settings:
-  - {fileID: 11400000, guid: bed577be6c077eb4489a08ac2acfc867, type: 2}
-  - {fileID: 11400000, guid: e9bc11a1a1eb86a4babe9cbcd59c11c8, type: 2}
+  _settings: {fileID: 11400000, guid: e9bc11a1a1eb86a4babe9cbcd59c11c8, type: 2}
 --- !u!114 &3386956223199694653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +277,10 @@ MonoBehaviour:
 
     @showUI MiniMap
 
-    alright enought {resultGame}'
+    @goto .WinMiniGame if:resultGame==0
+
+    @goto
+    .LooseMiniGame'
   playOnAwake: 0
   disableWaitInput: 0
 --- !u!1 &3624741216262566366
@@ -579,8 +580,8 @@ MonoBehaviour:
   onShow:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3386956223199694653}
-        m_TargetAssemblyTypeName: FinishGameManager, Assembly-CSharp
+      - m_Target: {fileID: 8366465252304707321}
+        m_TargetAssemblyTypeName: MemoryGameManager, DTT.Minigame-Memory.Runtime
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:

@@ -1,0 +1,65 @@
+; English <en> to Ukrainian (Ukraine) <uk-UA> localization document for `ClubIntro` naninovel script
+
+# e6509e62
+; Ouch...[i] Feels like someone is beating my head with the drumsticks...[i] Wait, I... can't remember a thing? Not even who I am?! Jeez, how could this even…
+Ох...[i] Таке враження, що хтось відбиває мені потилицю барабанними паличками...[i] Я... нічого не пам'ятаю? Навіть власного імені?! Боже, як це взагалі...
+
+# 3ed6f59
+; Women: Oh, you're awake, ...
+Жінка: О, ти нарешті прокинувся, ...
+
+# 9b64a5d
+; Huh?[i] Who is she?[i] Is she referring to me?[i] If so, then my name must be...
+Га?[i] Чий це голос?[i] Вона звертається до мене?[i] Якщо так, то виходить, що мене звуть...
+
+# 70804293
+; @input name summary:"I'm pretty sure she's just called me..."
+@input name summary:"Я майже впевнений, що вона щойно назвала мене..."
+
+# f98728f6
+; Women: You sure had a great time with that injection from last night, {name}-boy!
+Жінка: А ти справді непогано повеселився з тією ін’єкцією минулого вечора, {name}!
+
+# 863c9a6c
+; {name}: PLEASE, you're being too loud! Anyway, what are you even talking about?[i] Injection?[i] Last night? Where are we? Who are you?[i] And how is that I can't even remember my name, but you wake me up calling it?!
+{name}: БУДЬ ЛАСКА, ти занадто голосна! Та й загалом, про що ти взагалі?[i] Ін'єкція?[i] Минулого вечора? Де ми знаходимось? Хто ти така?[i] І як це можливо, що ти ось так будиш мене, покликавши на ім'я, якого я навіть не пам'ятаю?!
+
+# 41eeec8
+; Women: Wait... You still haven't gained your memories back..?
+Жінка: Зажди... Твоя пам'ять досі не відновилася...?
+
+# 43d8c0db
+; {name}: I'm begging you to answer at least some of my questions first.
+{name}: Я благаю тебе відповісти спочатку хоча б на деякі з моїх запитань.
+
+# 88e13059
+; Women: Woah.
+Жінка: Вау.
+
+# c963bc7c
+; LEXI: Okay, listen...[i] First, your name is {name}. Mine is Alexis actually, but you always call me Lexi. I am your...[i] well, colleague.
+LEXI: Гаразд, слухай...[i] По-перше, тебе звуть {name}. Моє ім'я взагалі-то Алексіс, проте ти зазвичай кличеш мене Лексі. Я твоя...[i] колега, певно так.
+
+# 8dacfa50
+; LEXI: This is our “office” of some sort — we have a contract with this club which allows us to stay here for work purposes. Our job is to try out various neuro-injections from different vendors and fill in the reports for them.
+LEXI: Це місце — щось на кшталт “офісу” для нас — ми маємо контракт із цим клубом, який дозволяє нам лишатися тут для роботи. Наша робота полягає в тому, щоб випробовувати нейроін’єкції від різних виробників і заповняти для них звіти.
+
+# f4cd384b
+; LEXI: How is it so far?[i] Anything sounds familiar?
+LEXI: То що?[i] Почув щось знайомого?
+
+# 2b4151bd
+; {name}: Not in the slightest.
+{name}: Нітрохи.
+
+# da97d8d7
+; LEXI: You've got to be kidding me. Can't believe it actually worked.
+LEXI: Ні, це певно жарт якийсь. Я не можу повірити, що це справді спрацювало.
+
+# e1524bd7
+; {name}: Excuse me??
+{name}: Перепрошую??
+
+# b2c9c7b7
+; LEXI: Nevermind. Sorry for the rush, but you have to go to the vendor now. He's supposed to explain everything to you and pay us for the report. I'll get it ready for you in a sec.
+LEXI: Не зважай. Вибачай за поспішність, але наразі тобі треба до виробника. Він повинен пояснити все тобі і заплатити за звіт нам. За мить все для тебе підготую.

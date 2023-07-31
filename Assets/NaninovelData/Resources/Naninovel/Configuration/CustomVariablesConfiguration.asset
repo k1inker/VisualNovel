@@ -13,19 +13,11 @@ MonoBehaviour:
   m_Name: CustomVariablesConfiguration
   m_EditorClassIdentifier: 
   PredefinedVariables:
-  - name: clearedMountain
-    value: false
-  - name: mountainAvailable
-    value: false
+  - name: wareHouseAvailable
+    value: true
   - name: townAvailable
-    value: false
-  - name: forestAvailable
-    value: false
-  - name: lakeAvailable
-    value: false
-  - name: canyonAvailable
-    value: false
-  - name: vibrating
+    value: true
+  - name: clubAvailable
     value: false
   - name: name
     value: '""'
@@ -35,5 +27,5 @@ MonoBehaviour:
     value: '""'
   - name: resultGame
     value: 0
-  - name: difficultGame
+  - name: resultChoice
     value: 0

@@ -1,0 +1,28 @@
+@bgm DefaultBack volume:0.5
+@set townAvailable=false
+@set wareHouseAvailable=true
+@set clubAvailable=true
+@showUI MiniMap
+@if locationQuest!="town"
+    @goto .Town
+@endIf
+#Apartment
+@back Apartment
+Lexi probably has no idea how wild it is to invite a random guy into your home like this. Well, I guess she's not here anyway.
+Right, the drawer. Where would it be...?
+@showUI RoomTriger
+@hidePrinter
+@stop
+#FindObject
+@back Apartment2
+@hideUI RoomTriger
+There it is! Let's see...
+All that's left is to refill one of these empty syringes with an injection...
+Here we go. I guess I'll take both of them with me..? Anyway, now it is time to meet the vendor and finally bring my old self back.
+@set "locationQuest =\"warehouse\""
+@set "quest=\"Give back injection\""
+@stop
+#Town
+@back Town
+The nightlife as always
+@stop

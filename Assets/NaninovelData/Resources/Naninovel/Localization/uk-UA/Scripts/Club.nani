@@ -1,0 +1,311 @@
+; English <en> to Ukrainian (Ukraine) <uk-UA> localization document for `Club` naninovel script
+
+# dfa9a2b8
+; {name}: Glad you're both here already.
+{name}: Радий бачити, що всі вже на місці.
+
+# 9ac1ae10
+; KROHN: You should be grateful I was nearby for work purposes so I could actually stop at this nasty place of yours!
+KROHN: Ви маєте бути вдячні, що моя інша зустріч по роботі була достатньо близько звідси, щоб я зміг зупинитися в цьому вашому бридкому місці!
+
+# ffcb7048
+; LEXI: Sure, sure.
+LEXI: Так-так, звичайно. 
+
+# 6ba260cf
+; KROHN: I am willing to forgive you though. But only in case you finally have what we both need.
+KROHN: Але я все ж готовий вам пробачити. Проте тільки в тому випадку якщо ти нарешті приніс те, що потрібно нам обом.
+
+# a9b08096
+; {name}: But how can you guarantee that you'll help me with a memory loss though?
+{name}: Ти можеш гарантувати, що після цього допоможеш мені з втратою пам'яті?
+
+# e614983a
+; KROHN: Ah, my pure soul, I can assure you that an injection of this power without an antidote is much less of a profit that it can be if I create one.
+KROHN: Ах, моя невинна душа, я можу вас цілковито запевнити, що самостійно ін’єкція такої сили все одно приноситиме менший прибуток, ніж якщо я створю ще й антидот, що зможе з нею звладнути.
+
+# a17029f8
+; KROHN: However, the prices of my services might also go up accordingly...
+KROHN: Проте відповідно можуть зрости й ціни на мої послуги...
+
+# af8af3ab
+; LEXI: Huh? You dare to charge him a fee for being your test subject?!
+LEXI: Га?! Ти ще смієш стягувати з нього плату за те, що він був твоїм піддослідним?!
+
+# 76eeab4c
+; KROHN: What's the fuss, honey? It's not like I'm not going to generously reward you for the job.
+KROHN: Що за метушня, люба? Я ж не казав, що я не збираюся щедро винагородиттм вас за роботу.
+
+# 90814e32
+; {name}: I'm capable of making my own decisions, Lexi.
+{name}: Я здатний самостійно приймати рішення, Лексі.
+
+# 2428db07
+; LEXI: Fine. Play a man as much as you want, {name}-boy.
+LEXI: Ну то й хай. Грай чоловіка скільки хочеш, хлопче.
+
+# 296fb967
+; {name}: All right now. I think I put the syringes in this pocket…
+{name}: Так... Здається, я поклав шприци до цієї кишені…
+
+# f4761a12
+; {name}: Okay, there they are.
+{name}: Добре, ось і вони.
+
+# c6027e7a
+; KROHN:: ..Pardon me? They?!
+KROHN: ...Я перепрошую? Вони?!
+
+# d11860e1
+; LEXI: …
+LEXI: …
+
+# 27227b3a
+; {name}: We're screwed.
+{name}: Ми облажалися.
+
+# 67becf7a
+; {name}: Umm...[i] I meant...
+{name}: Гм... я мав на увазі...
+
+# d790dd32
+; KROHN: So you did want to leave yourself a copy of my glorious creation! How very rude and disrespectful of you! Give it back to me, now!
+KROHN: Отже, ви таки хотіли залишити собі копію мого славетного творіння! Як це несамовито грубо й неповажно з вашого боку! Поверни це мені зараз же!
+
+# e3d2738a
+; LEXI: Yeah, give him that one syringe with his precious injection, {name}!
+LEXІ: Так! Відай йому той один шприц із його дорогоцінною ін’єкцією, {name}!
+
+# 986dd8ae
+; KROHN: You realise I can sell as much of it as you'll want, young lady, don't you?!
+KROHN: Ви розумієте, що я можу продати вам стільки, скільки ви захочете, молода леді, чи не так?!
+
+# 7cea7f5f
+; LEXI: Yeah, you sure can! Why do you think I would leave it to myself like that if I could just afford buying it?!
+LEXI: Ну так, ти неодмінно можеш! Як думаєш, чого б я залишала її собі, якби могла соті дозволити просто купити?!
+
+# 56bfe27d
+; KROHN: This is unacceptable! You give me both of the syringes, now!
+KROHN: Це неприпустимо! Віддавай мені обидва шприци, хутко!
+
+# 563de822
+; LEXI: Hand in one of them to me and I'll leave! Then you'll be able to finish whatever business you have with him!
+LEXI: Віддай мені один з них, і я одразу піду! Тоді ти зможеш закінчити всі свої справи, що маєш із ним!
+
+# 97e477c7
+; {name}: What the hell?! What should I do now…
+{name}: Якого біса?! Що мені тепер робити…
+
+# d9a5cf58
+; @choice "Give one of the syringes to Lexi." goto:.GiveInjectLexi set:resultChoice=0
+@choice "Віддати один зі шприців Лексі." goto:.GiveInjectLexi set:resultChoice=0
+
+# 8a998cc
+; @choice "Give both of the syringes to the vendor." goto:.GiveInjectKrohn set:resultChoice=1
+@choice "Віддати обидва шприци виробникові." goto:.GiveInjectKrohn set:resultChoice=1
+
+# a7140332
+; @choice "Leave both of the syringes to yourself and break them." goto:.GiveOwn set:resultChoice=2
+@choice "Залишити собі обидва шприци та розбити їх." goto:.GiveOwn set:resultChoice=2
+
+# d6a51b52
+; LEXI: *winks*
+LEXI: *підмигує*
+
+# bf2450a0
+; KROHN: Argh, what an indecency!!
+KROHN: Тьху, яка непристойність!!
+
+# 37feffc
+; KROHN: *grabs a second syringe from your hand*
+KROHN: *хапає з твоєї руки другий шприц*
+
+# 744889ef
+; KROHN: Don't think you're getting any payment NOR memories back after this!
+KROHN: Навіть не думайте, що після подібного отримаєте виплату чи свої спогади!
+
+# fa12122c
+; Did I make the right choice..?
+Чи дійсно я зробив правильний вибір..?
+
+# d11860e1
+; LEXI: …
+LEXI: …
+
+# 568245da
+; KROHN: That's right! What a reasonable person you are, {name}!
+
+# 85b1935b
+; KROHN: Let's not prolong our lovely meeting any further, for goodness' sake! Meet me at my workplace to get your final paycheck. We'll be able to discuss your further treatment there, too.
+KROHN: А тепер не затягуймо нашу чарівну зустріч ще більше, заради Бога! Зустрінемося на моєму робочому місці, щоб обговорити вашу кінцеву зарплату. Там же ми зможемо розпланувати й подальше лікування.
+
+# 470fb405
+; LEXI: Perfect. Just wow. Hope you are happy with yourself now.
+LEXI: Ідеально. Просто вау. Сподіваюся, ти зараз задоволений собою.
+
+# d11860e1
+; LEXI: …
+LEXI: …
+
+# 231c66e7
+; KROHN: …
+KROHN: ...
+
+# b73e531e
+; {name}: What?! What else did you expect me to do, you two?! First you erase my memories, then make me run errands for the whole day without even a glimpse of sympathy and under all this burden I am forced to choose without even knowing what my own self would do in my place!
+{name}: Що?! Чого ще ви очікували від мене, ви двоє?! Спочатку ти, Кроне, стираєш мої спогади, потім ти, Лексі, змушуєш мене цілий день займатися дорученнями без жодного співчуття, і під усім цим тягарем я змушений робити вибір, навіть не здогадуючись, що би справжній я зробив на своєму місці!
+
+# 470fb405
+; LEXI: Perfect. Just wow. Hope you are happy with yourself now.
+LEXI: Ідеально. Просто вау. Сподіваюся, ти зараз задоволений собою.
+
+# aaa1583c
+; KROHN: Argh, what an absurdity!!
+KROHN: Тьху, який абсурд!!
+
+# fa12122c
+; Did I make the right choice..?
+Чи дійсно я зробив правильний вибір..?
+
+# 22cc9e27
+; Nice music
+Гарна музика.
+
+# 762bee16
+;     *Lexi on the couch, in her phone*
+*Лексі сидить на дивані, в телефоні*
+
+# a20149fb
+;     {name}: Oh, you're back here.
+{name}: О, ти вже повернулася.
+
+# 34823c06
+;     LEXI: I waited for the trouble to vanish and immediately returned.
+LEXI: Дочекалася, поки біда зникне, і одразу звернула назад.    
+
+# b5599c4e
+;     LEXI: You know, {name}, I have to tell you something. First of all, thank you. I really mean it. Although it was actually your fault for bringing both of the injections, at least I happened to see your priorities…[i] Even though you've completely lost your memory of me.
+
+# aadfb5ab
+;     {name}: I did make this choice, Lexi, but sadly, your gratitude is not going to help my situation much.
+{name}: Я дійсно зробив цей вибір, Лексі, але, на жаль, сама твоя вдячність не дуже допоможе моїй ситуації.
+
+# ecd7d46
+;     LEXI: For you to know, I have never left you in a pinch.
+LEXI: Щоб ти знав, я ніколи не залишала тебе в крайньому випадку.
+
+# 4fe1db50
+;     *Lexi coming closer*
+*Лескі підійшла ближче*
+
+# 3e6c18db
+;     LEXI: I was always by your side.
+LEXI: Я завжди була поряд.
+
+# 3cb7d42f
+;     {name}: Figured that. Still, I have no idea what you're talking about.
+{name}: Я здогадався. Проте я все одно не в змозі порозуміти, про що ти говориш.
+
+# 478749df
+;     *Lexi takes a step back*
+*Лескі робить крок назад*
+
+# ab331df4
+;     LEXI: And I hate that! And this is where we transition to “second of all"! {name}, it goes without saying that I'm going to leave some of the injection for a neuro-vendor who's gotta be able to bring your memories back…[i] To bring you back to me.
+LEXI: Ось це мене й дратує! Сама тому ми переходимо до “по-друге”! {name}, само собою зрозуміло, що я залишу частину ін’єкції для нейровиробника, який би зміг повернути тобі спогади…[i] Повернути тебе мені.
+
+# 92088388
+;     LEXI: I am gonna make it happen no matter what. Just… trust me one more time. Please.
+LEXI:  Я зроблю це незважаючи ні на що. Просто… довірся мені ще один раз. Будь ласка.
+
+# acd209d4
+;     {name}: *sigh*
+{name}: *зітхає*
+
+# ad99067c
+;     {name}: I trust you. Although I am definitely too tired for all of this at the moment.
+{name}: Я тобі довіряю. Хоча зараз я, безумовно, надто втомився для всього цього.
+
+# 149d721c
+;     LEXI: Sure. Take your time today and have a good rest. Tomorrow we've got a lot of work to do. And {name}...
+LEXI: Звичайно. Сьогодні тобі більше нема куди поспішати.  Добре відпочинь. Завтра у нас багато роботи. І ще дещо, {name}...
+
+# 570d547c
+;     {name}: After, Lexi. After I am me again.
+{name}: Опісля, Лексі. Все після того, як я знову стану собою.
+
+# fd515ad1
+;     LEXI: Roger that.
+LEXI: Я тебе почула.
+
+# 762bee16
+;     *Lexi on the couch, in her phone*
+*Лексі сидить на дивані, в телефоні*
+
+# 7985800d
+;     {name}: Lexi, I…
+{name}: Лексі, я…
+
+# 49a2a8b2
+;     LEXI: Stop where you are, {name}-boy. What was I even thinking about? I knew your memory of me was completely lost. Why would you even choose me in a situation like this? Moreover, I am such an idiot to let you pick up the syringes by yourself…
+LEXI: На цьому й зупинися, хлопче. І про що я взагалі думала? Я ж знала, що твоя пам'ять про мене повністю втрачена. З чого б ти взагалі обрав мене в такій ситуації? Більш за те, яка ж я ідіотка, що дозволила тобі забрати ту ін'єкцію без нагляду…
+
+# 9d6a745c
+;     LEXI: Still can't believe you did what you did. Despite my head still being on my shoulders, I just can't comprehend it. You didn't even flinch. Did the injection actually erase everything, even your instincts? Your deeper feelings..? This is just… frustrating as hell.
+LEXI: Та я досі не можу повірити, що ти зробив те, що зробив. Незважаючи на те, що моя голова досі на моїх плечах, я просто не можу охопити цього мозком. Ти навіть не вагався. Чи справді ін’єкція стерла все, навіть твої інстинкти? Твої глибинні почуття..? Це просто... жахливо неприємно.
+
+# b32ce45a
+;     {name}: I can't get it, what are you being angry about?? Now we can actually receive the money that we deserve and that I'm suffering for, my memories will be back and after a few more job offers we might be able to buy Krohn's injection to release you from the debts!
+{name}: Я не можу зрозуміти, на що ти сердишся?? Тепер ми можемо отримати гроші, на які заслуговуємо і заради яких я отак страждаю, мої спогади повернуть, а після кількох пропозицій роботи ми, можливо, зможемо накопичити на ін’єкцію Крона, щоб звільнити тебе від боргів!
+
+# 8115e1b
+;     {name}: I was just thinking logically! What is wrong about it?
+{name}: Я просто міркував логічно! Що з цим не так?
+
+# cb0f0ac9
+;     LEXI: I am simply amazed at how delusional you can get. You don't realise the prices of Krohn's and every other person's services in this city exceed our job income by a ton?
+LEXI: Я просто вражена тим, наскільки ти можеш оманитися. Ти реально не розумієш, що ціни на послуги Крона як і будь-якої іншої людини в цьому місті незрівнянно перевищують наш дохід від роботи?
+
+# fc9ed361
+;     LEXI: And also, how much time do you think I have to pay off everyone I own? It's not like their patience is made of rubber, damn it!
+LEXI: До того ж, як ти думаєш, скільки часу в мене є, щоб розплатитися з усіма, кому я винна? Їхнє терпіння не з гуми зроблено, дідько!
+
+# b0ab29f2
+;     {name}: I get it but still, maybe…
+{name}: Я все це розумію, але все ж таки, можливо…
+
+# 98f0ae4d
+;     LEXI: It's all just like I said, okay?! Just…[i] go already. You have memories to restore and I have to calm down and think of what to do next.
+LEXI: Усе так, як я сказала, гаразд?! Просто… піди поки що кудись, добре? Тобі потрібно відновити спогади десь там, назовні, а я маю заспокоїтися й подумати, що мені робити далі.
+
+# 3b453ef7
+;     LEXI: Your old self would definitely understand…[i] Argh, never mind. See you, {name}.
+LEXI: Минулий ти б обов'язково зрозумів… Ай, неважливо. До зустрічі, {name}.
+
+# 762bee16
+;     *Lexi on the couch, in her phone*
+*Лексі сидить на дивані, в телефоні*
+
+# 7985800d
+;     {name}: Lexi, I…
+{name}: Лексі, я…
+
+# 49a2a8b2
+;     LEXI: Stop where you are, {name}-boy. What was I even thinking about? I knew your memory of me was completely lost. Why would you even choose me in a situation like this? Moreover, I am such an idiot to let you pick up the syringes by yourself…
+LEXI: На цьому й зупинися, хлопче. І про що я взагалі думала? Я ж знала, що твоя пам'ять про мене повністю втрачена. З чого б ти взагалі обрав мене в такій ситуації? Більш за те, яка ж я ідіотка, що дозволила тобі забрати ту ін'єкцію без нагляду…
+
+# 3a8c7d40
+;     LEXI: Still can't believe you did what you did. Despite my head still being on my shoulders, I just can't comprehend it. Did the injection actually erase everything, even your instincts? Your deeper feelings..? This is just…[i] frustrating as hell.
+LEXI: Та я досі не можу повірити, що ти зробив те, що зробив. Незважаючи на те, що моя голова досі на моїх плечах, я просто не можу охопити цього мозком. Ти навіть не вагався. Чи справді ін’єкція стерла все, навіть твої інстинкти? Твої глибинні почуття..? Це просто... жахливо неприємно.
+
+# fa10a656
+;     {name}: I didn't even have time to think about all of this! And you are right, why in the world would you just leave me alone in a situation like this when I can't even remember how to act accordingly? I'm so sorry I disappointed you by being overwhelmed and confused as hell-
+{name}: Та я навіть не встиг про все це порозмислити! І так, ти маєш рацію, чому ти лишила мене насамоті в такій ситуації, коли я навіть не пам’ятаю, як відповідно поводитися? Мені дуже шкода, що я розчарував тебе тим, що був пригнічений і збентежений до біса...
+
+# e88f5339
+;     LEXI: Just…[i] go somewhere else for now, will you? You have memories to restore somewhere out there and I have to calm down and think of what to do next.
+LEXI: Просто…[i] піди поки що кудись, добре? Тобі потрібно відновити спогади десь там, назовні, а я маю заспокоїтися й подумати, що мені робити далі.
+
+# 3b453ef7
+;     LEXI: Your old self would definitely understand…[i] Argh, never mind. See you, {name}.
+LEXI: Минулий ти б обов'язково зрозумів… Ай, неважливо. До зустрічі, {name}.

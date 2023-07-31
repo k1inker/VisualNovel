@@ -14,8 +14,7 @@ public class EnableQuestLocation : MonoBehaviour
     {
 
         string selectLocation = _variableManager.GetVariableValue("locationQuest");
-        Debug.Log(selectLocation);
-        if ("mountains" == selectLocation)
+        if ("warehouse" == selectLocation)
         {
             questSign[0].SetActive(true);
         }
@@ -23,7 +22,7 @@ public class EnableQuestLocation : MonoBehaviour
         {
             questSign[1].SetActive(true);
         }
-        else if ("forest" == selectLocation)
+        else if ("club" == selectLocation)
         {
             questSign[2].SetActive(true);
         }

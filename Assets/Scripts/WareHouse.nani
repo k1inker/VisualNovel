@@ -1,0 +1,124 @@
+@back WareHouse
+@set wareHouseAvailable=false
+@bgm DefaultBack volume:0.5
+@showUI MiniMap
+@if quest==""
+    @goto .AfterQuest
+@endIf
+
+@if locationQuest!="warehouse"
+    @goto .WarehouseNoQuest
+@endIf
+
+@if quest=="Go to warehouse"
+    @goto .FirstmeetKrohn
+@endIf
+@goto .WarehouseSecondMeet
+#FirstmeetKrohn
+@set townAvailable=true
+@set clubAvailable=true
+@char KROHN
+{name}: Hello..?[i] I'm looking for neuro-injections vendor named Krohn
+KROHN: Why, hello there, {name}! I've been eagerly waiting for you to visit! So, how did our precious experiment go?
+{name}: Here is the report my colleague Lexi…[i] I mean, Alexis filled in for you. 
+
+KROHN: Good, very good! Don't be shy, hand it in!
+He start inspecting the report
+KROHN: Hm…[i] So you have no memory of the last entertaining night plus you've even forgotten some information about your own self...
+KROHN: I would definitely like to clear up a few things. Let's do a tiny test to estimate your awareness of our time, this city, current world order and other boring stuff. Don't you worry, it won't take long.
+{name}: Sure, I guess…
+
+;mini game script
+@set "quest=\"Pass the test\""
+@hidePrinter 
+@hideUI MiniMap
+@showUI MiniGame
+@stop
+#WinMiniGame
+KROHN: Hmm...[i] From what I see you're actually still very well-orientated in your surroundings.
+@goto .DialogAfterGame
+#LooseMiniGame
+KROHN: What a result, sweetheart...[i] Your world perception have actually blunted even more than I would expect.
+#DialogAfterGame
+KROHN: That's pretty much everything I needed to know. Well, thank you for such a self-sacrificial participation in my research, darling! Now give me the leftovers of the injection and we'll proceed to your desired payment.
+{name}: Um…[i] I believe Alexis said nothing about the leftovers to me... At least I don't have any with me.
+KROHN: What do you mean you don't have it? Were you two planning on just leaving the rest to yourself?!
+{name}: I mean… I have no idea, because your injection erased all my valuable memories. Speaking of which, weren't you supposed to neutralise this effect..?
+KROHN: I can't reverse the reaction without the injection, you dummy! I need the exact same formula that was used on your silly nervous system to create an antidote!
+KROHN: I am pausing our communication here until you bring it to me!
+@set "quest=\"Talk with Lexi\""
+;calling lexi dialog
+@hideChars
+@spawn Blur
+{name}: Lexi? Mind explaining to me where is the remaining injection I was supposed to bring to Krohn?
+LEXI: Shit...[i] My bad, {name}. Hoped he wouldn't ask for it.
+LEXI: You see, I need this stuff. If I manage to inject my collectors with it somehow, I will be free from my debts. ALL of them. Do you even realise how strong it is?
+{name}: Hell yeah, I do! Because I am under its effect, remember? And if you don't give it to me, this stupid vendor won't be able to retrieve my memories!
+LEXI: Relax, {name}-boy! I already have a plan, actually. But I also have plenty of things to do at the moment so you'll have to do everything yourself. Sorry.
+LEXI: I left the injection in my apartment. Text me when you're there and I'll open the door for you remotely. You'll find all we need in the sliding drawer. Take the injection and fill an empty syringe from the drawer with a half of it. Then go and bring the actual leftovers to the Krohn-dude. Okay?
+{name}: You are extremely troublesome, Lexi.
+LEXI: Come on now, {name}-boy. Don't make our payment wait for any longer, will ya?
+@despawn Blur
+@set "quest=\"Go town apartment Lexi\""
+@set "locationQuest =\"town\""
+@stop
+#WarehouseNoQuest
+@if "locationQuest ==\"town\""
+    @set townAvailable=true
+    @set clubAvailable=true
+@else
+    @set clubAvailable=true
+@endIf
+
+Krohn isn`t here, I think he left.
+@stop
+#WarehouseSecondMeet
+@set clubAvailable=true
+{name}: Krohn? I brought you the remaining injection!
+{name}: ...
+What the heck? No one is here!
+*calling Lexi*
+@spawn Blur
+{name}: You can't imagine how full I am of this whole situation already, Lexi. This Krohn-guy isn't at his place! What should I do now?
+{name}: You're such a kid, {name}-boy. Those vendors are busy fellas, you know. I have his number though. I'm gonna call right now and invite him to come visit our office, if he wants his injection back, 'cause I am already here, so you can come over and we'll finish this mess at once.
+{name}: Such a mess for sure. I totally feel like a delivery guy today. Leaving the vendor to you. Will meet you at the spot.
+LEXI: See ya.
+@despawn Blur
+@set "locationQuest =\"club\""
+@set "quest=\"Go to club\""
+@stop
+
+#AfterQuest
+@set wareHouseAvailable=false
+@set clubAvailable=true
+@char KROHN
+@if resultGame==0
+    {name}: Hey there, Krohn.
+    KROHN: You've actually had the nerve to show up here after what you've done. What an incredible arrogance.
+    {name}: Just wanted to make sure you're not going to help me if I pay for all the trouble we've caused to you.
+    KROHN: Oh trust me, child, you'd be internally indebted to me if you tried to. Be grateful I'm not interested in beating money out of nasty kids. Now get out and never show up here again. And remember — stealing is stealing, whether you use a crowbar, a computer command or that shameless girl of yours who thinks she's outsmarted everyone. You won't get far with this.
+    KROHN: Good luck with finding someone skilled enough to help you with your amnesia.
+@elseIf resultGame==1
+    {name}: Hey there, Krohn.
+    KROHN: Look who's here! The level-headed man who sets his priorities right!
+    {name}: I'd rather you leave that already and get straight to the point.
+    KROHN: Ahem…[i] Understandable, sweetheart. I already have everything ready for you. There is your well-deserved money. Thank you again for your invaluable participation.
+    {name}: How much time do you need to heal my brain or whatever?
+    KROHN: I'd say from a couple of weeks to a month, if my self-assessment is correct, which I'm sure it is.
+    {name}: I will only pay for the treatment in case it works out for me.
+    KROHN: How very cautious of you! I'm fine with that, though. I see your determination and trust in your decency. I'll begin my preparations right away. Gonna keep in touch with you, so stay in contact, will you?
+    {name}: I will. Thank you for your service.
+    KROHN: Pleasure doing business with you, darling.
+@else
+    {name}: Hey there, Krohn.
+    KROHN: You've actually had the nerve to show up here after what you've done. What an incredible arrogance.
+    {name}: Just wanted to make sure you're not going to help me if I pay for all the trouble we've caused to you.
+    KROHN: Oh trust me, child, you'd be internally indebted to me if you tried to. Be grateful I'm not interested in beating money out of nasty kids. It was partly my own mistake, after all…
+    {name}: What do you mean by that?
+    KROHN: Ah, you sure are testing my nerves.
+    KROHN: You see, it happens to be that I don't have any injection of that particular formula we've used on you left. The same day I gave the test sample to you, I accidentally broke the one I left for myself right there, where you are standing.
+    KROHN: I wasn't even sad about it, though. You can only imagine how many samples of this injection I've made throughout these months. One more or less was of no importance — who would've thought that the one I've lost would turn out to be the most successful.
+    KROHN: Now get out and never show up here again.
+    KROHN: And good luck with finding someone skilled enough to help you with your amnesia
+@endIf
+@stop

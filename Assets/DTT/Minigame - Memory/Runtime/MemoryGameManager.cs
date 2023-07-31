@@ -40,7 +40,7 @@ public class MemoryGameManager : MonoBehaviour
     /// <summary>
     /// The GameSettings.
     /// </summary>
-    [SerializeField] private MemoryGameSettings[] _settings = new MemoryGameSettings[2];
+    [SerializeField] private MemoryGameSettings _settings;
 
     /// <summary>
     /// The amount a player has tried to match two cards during the game.
@@ -52,12 +52,12 @@ public class MemoryGameManager : MonoBehaviour
     /// Starts the game with the given settings.
     /// </summary>
     /// <param name="settings">The settings used for this play session.</param>
-    public void StartGame(int difficulty)
+    public void StartGame()
     {
         _amountOfTurns = 0;
         _timer.Begin();
 
-        _board.SetupGame(_settings[difficulty]);
+        _board.SetupGame(_settings);
         Started?.Invoke();
     }
     /// <summary>

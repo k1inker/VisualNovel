@@ -173,26 +173,23 @@ MonoBehaviour:
     - name: MiniGame
       pathPrefix: UI
       guid: 069528c2c8ad26949a448cdbc390a2b0
+    - name: RoomTriger
+      pathPrefix: UI
+      guid: a9e2380da7563c24b960aa4f0c30430a
   - Id: Scripts
     Resources:
-    - name: Mountain
+    - name: Apartment
       pathPrefix: Scripts
-      guid: 9391d5e5d7ed1334c9ba658ee162f3c3
-    - name: Canyon
+      guid: 03bb25e17734a3c458850768d64a7de9
+    - name: ClubIntro
       pathPrefix: Scripts
-      guid: d6971be909abc3f44b3a49754c29c306
-    - name: Forest
+      guid: aeaa17be4e398c847b1ec3f5aa0f1b2e
+    - name: WareHouse
       pathPrefix: Scripts
-      guid: 44f6e0affc01c17468665e09ae85382c
-    - name: Lake
+      guid: c3eda2f3b3e3c114ab7286f4b1ebe0de
+    - name: Club
       pathPrefix: Scripts
-      guid: 30719d5dffb308d4d9cf9fca586afa74
-    - name: Town
-      pathPrefix: Scripts
-      guid: ae690f31ee4e05d479837ac3024ed8ff
-    - name: Intro
-      pathPrefix: Scripts
-      guid: 0146a8e3476f59440ab77c95eb7f868a
+      guid: 656222b16236a424db9634689e545675
   - Id: TextPrinters/9fe3e14e-1363-480d-83ff-2f72ed59c048
     Resources:
     - name: Tooltip
@@ -200,20 +197,41 @@ MonoBehaviour:
       guid: 0d0e1ea3514ebdc4d8e1dd6d6926684f
   - Id: Backgrounds/360ddc6b-f475-468d-bd73-48010751067f
     Resources:
-    - name: Canyon
+    - name: Club
       pathPrefix: Backgrounds/MainBackground
-      guid: 8559362aff0bc3e47889abc063daf73f
-    - name: Forest
+      guid: fc1bb6a5f4a161546b907065b1e8ff24
+    - name: WareHouse
       pathPrefix: Backgrounds/MainBackground
-      guid: 4e6c9d2dd66bd9b46a90a37b403ecff6
-    - name: Lake
+      guid: 49539c1e85d98144ab2144f4aac1664a
+    - name: Apartment
       pathPrefix: Backgrounds/MainBackground
-      guid: 564562c4d3634de4cb3b73a57614ff4e
-    - name: Mountain
-      pathPrefix: Backgrounds/MainBackground
-      guid: 3b6662b7396df894faf8a392654338c9
+      guid: 1b1433ee3a40e644c8bbc62a0c6429ba
     - name: Town
       pathPrefix: Backgrounds/MainBackground
-      guid: 649ed66a89d0c4742a352def1c8aa5c8
+      guid: 80e1a2e44c74a1048ad0ee67b480d40a
+    - name: Apartment2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4379383527266484da34cb90974d7699
   - Id: Unlockables
     Resources: []
+  - Id: Characters/c89b703b-94df-4cc4-83c6-cd53e894649c
+    Resources:
+    - name: Default
+      pathPrefix: Characters/LEXI
+      guid: 155f109b5ec4acd4fa8b27004583fe69
+  - Id: Characters/23fdb15b-c99c-4abf-9a40-675a52eb663c
+    Resources:
+    - name: Default
+      pathPrefix: Characters/KROHN
+      guid: 2fe3c5e8872ac4b4aa9ed921265363fb
+  - Id: Audio
+    Resources:
+    - name: ClubBack
+      pathPrefix: Audio
+      guid: da41194217c635b47881e1da84eb9ada
+    - name: DefaultBack
+      pathPrefix: Audio
+      guid: e8aa055132774d04eb892846aa36da15
+    - name: CloseDoor
+      pathPrefix: Audio
+      guid: f25835ab0964f2c458c056d8435c8cd0

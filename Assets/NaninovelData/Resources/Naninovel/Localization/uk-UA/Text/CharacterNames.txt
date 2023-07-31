@@ -1,0 +1,4 @@
+; English <en> to Ukrainian (Ukraine) <uk-UA> localization document for `CharacterNames` managed text document
+
+LEXI: Лексі
+KROHN: Крон

@@ -1,0 +1,135 @@
+@back Club
+@set clubAvailable=false
+@set wareHouseAvailable=true
+@bgm ClubBack volume:0.5
+@showUI MiniMap
+@if quest==""
+    @goto .AfterQuest
+@endIf
+@if locationQuest!="club"
+    @goto .NoQuestLocation
+@endIf
+@char KROHN
+@char LEXI
+{name}: Glad you're both here already.
+KROHN: You should be grateful I was nearby for work purposes so I could actually stop at this nasty place of yours!
+LEXI: Sure, sure.
+KROHN: I am willing to forgive you though. But only in case you finally have what we both need.
+{name}: But how can you guarantee that you'll help me with a memory loss though?
+KROHN: Ah, my pure soul, I can assure you that an injection of this power without an antidote is much less of a profit that it can be if I create one.
+KROHN: However, the prices of my services might also go up accordingly...
+LEXI: Huh? You dare to charge him a fee for being your test subject?!
+KROHN: What's the fuss, honey? It's not like I'm not going to generously reward you for the job.
+{name}: I'm capable of making my own decisions, Lexi.
+LEXI: Fine. Play a man as much as you want, {name}-boy.
+{name}: All right now. I think I put the syringes in this pocket…
+{name}: Okay, there they are.
+KROHN:: ..Pardon me? They?!
+LEXI: …
+{name}: We're screwed.
+{name}: Umm...[i] I meant...
+KROHN: So you did want to leave yourself a copy of my glorious creation! How very rude and disrespectful of you! Give it back to me, now!
+LEXI: Yeah, give him that one syringe with his precious injection, {name}!
+KROHN: You realise I can sell as much of it as you'll want, young lady, don't you?!
+LEXI: Yeah, you sure can! Why do you think I would leave it to myself like that if I could just afford buying it?!
+KROHN: This is unacceptable! You give me both of the syringes, now!
+LEXI: Hand in one of them to me and I'll leave! Then you'll be able to finish whatever business you have with him!
+{name}: What the hell?! What should I do now…
+@set "quest=\"Make final choice\""
+@choice "Give one of the syringes to Lexi." goto:.GiveInjectLexi set:resultChoice=0
+@choice "Give both of the syringes to the vendor." goto:.GiveInjectKrohn set:resultChoice=1
+@choice "Leave both of the syringes to yourself and break them." goto:.GiveOwn set:resultChoice=2
+@stop
+
+#GiveInjectLexi
+@set "quest=\"\""
+@set "locationQuest =\"\""
+@hideUI Quest
+LEXI: *winks*
+KROHN: Argh, what an indecency!!
+KROHN: *grabs a second syringe from your hand*
+KROHN: Don't think you're getting any payment NOR memories back after this!
+@char KROHN visible:false
+@spawn ShakeCamera
+@sfx CloseDoor
+Did I make the right choice..?
+@stop
+
+#GiveInjectKrohn
+@set "quest=\"\""
+@set "locationQuest =\"\""
+@hideUI Quest
+LEXI: …
+KROHN: That's right! What a reasonable person you are, {name}!
+KROHN: Let's not prolong our lovely meeting any further, for goodness' sake! Meet me at my workplace to get your final paycheck. We'll be able to discuss your further treatment there, too.
+@char KROHN visible:false
+@spawn ShakeCamera
+@sfx CloseDoor
+LEXI: Perfect. Just wow. Hope you are happy with yourself now.
+@stop
+
+#GiveOwn
+@set "quest=\"\""
+@set "locationQuest =\"\""
+@hideUI Quest
+LEXI: …
+KROHN: …
+{name}: What?! What else did you expect me to do, you two?! First you erase my memories, then make me run errands for the whole day without even a glimpse of sympathy and under all this burden I am forced to choose without even knowing what my own self would do in my place!
+LEXI: Perfect. Just wow. Hope you are happy with yourself now.
+KROHN: Argh, what an absurdity!!
+@char KROHN visible:false
+@spawn ShakeCamera
+@sfx CloseDoor
+Did I make the right choice..?
+@stop
+
+#NoQuestLocation
+@if "locationQuest ==\"town\""
+    @set townAvailable=true
+@endIf
+
+Nice music
+@stop
+
+#AfterQuest
+@char LEXI
+@if resultGame==0
+    *Lexi on the couch, in her phone*
+    {name}: Oh, you're back here.
+    LEXI: I waited for the trouble to vanish and immediately returned.
+    LEXI: You know, {name}, I have to tell you something. First of all, thank you. I really mean it. Although it was actually your fault for bringing both of the injections, at least I happened to see your priorities…[i] Even though you've completely lost your memory of me.
+    {name}: I did make this choice, Lexi, but sadly, your gratitude is not going to help my situation much.
+    LEXI: For you to know, I have never left you in a pinch.
+    *Lexi coming closer*
+    LEXI: I was always by your side.
+    {name}: Figured that. Still, I have no idea what you're talking about.
+    *Lexi takes a step back*
+    LEXI: And I hate that! And this is where we transition to “second of all"! {name}, it goes without saying that I'm going to leave some of the injection for a neuro-vendor who's gotta be able to bring your memories back…[i] To bring you back to me.
+    LEXI: I am gonna make it happen no matter what. Just… trust me one more time. Please.
+    {name}: *sigh*
+    {name}: I trust you. Although I am definitely too tired for all of this at the moment.
+    LEXI: Sure. Take your time today and have a good rest. Tomorrow we've got a lot of work to do. And {name}...
+    {name}: After, Lexi. After I am me again.
+    LEXI: Roger that.
+@elseIf resultGame==1
+    *Lexi on the couch, in her phone*
+    {name}: Lexi, I…
+    LEXI: Stop where you are, {name}-boy. What was I even thinking about? I knew your memory of me was completely lost. Why would you even choose me in a situation like this? Moreover, I am such an idiot to let you pick up the syringes by yourself…
+    LEXI: Still can't believe you did what you did. Despite my head still being on my shoulders, I just can't comprehend it. You didn't even flinch. Did the injection actually erase everything, even your instincts? Your deeper feelings..? This is just… frustrating as hell.
+    {name}: I can't get it, what are you being angry about?? Now we can actually receive the money that we deserve and that I'm suffering for, my memories will be back and after a few more job offers we might be able to buy Krohn's injection to release you from the debts!
+    {name}: I was just thinking logically! What is wrong about it?
+    LEXI: I am simply amazed at how delusional you can get. You don't realise the prices of Krohn's and every other person's services in this city exceed our job income by a ton?
+    LEXI: And also, how much time do you think I have to pay off everyone I own? It's not like their patience is made of rubber, damn it!
+    {name}: I get it but still, maybe…
+    LEXI: It's all just like I said, okay?! Just…[i] go already. You have memories to restore and I have to calm down and think of what to do next.
+    LEXI: Your old self would definitely understand…[i] Argh, never mind. See you, {name}.
+@else
+    *Lexi on the couch, in her phone*
+    {name}: Lexi, I…
+    LEXI: Stop where you are, {name}-boy. What was I even thinking about? I knew your memory of me was completely lost. Why would you even choose me in a situation like this? Moreover, I am such an idiot to let you pick up the syringes by yourself…
+    LEXI: Still can't believe you did what you did. Despite my head still being on my shoulders, I just can't comprehend it. Did the injection actually erase everything, even your instincts? Your deeper feelings..? This is just…[i] frustrating as hell.
+    {name}: I didn't even have time to think about all of this! And you are right, why in the world would you just leave me alone in a situation like this when I can't even remember how to act accordingly? I'm so sorry I disappointed you by being overwhelmed and confused as hell-
+    LEXI: Just…[i] go somewhere else for now, will you? You have memories to restore somewhere out there and I have to calm down and think of what to do next.
+    LEXI: Your old self would definitely understand…[i] Argh, never mind. See you, {name}.
+@endIf
+@stop

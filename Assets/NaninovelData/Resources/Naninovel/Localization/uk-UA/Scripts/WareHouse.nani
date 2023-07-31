@@ -1,0 +1,233 @@
+; English <en> to Ukrainian (Ukraine) <uk-UA> localization document for `WareHouse` naninovel script
+
+# c2502aef
+; {name}: Hello..?[i] I'm looking for neuro-injections vendor named Krohn
+{name}: Доброго дня..?[i] Мені потрібен виробник нейроін’єкцій на ім’я Крон…
+
+# 869b415f
+; KROHN: Why, hello there, {name}! I've been eagerly waiting for you to visit! So, how did our precious experiment go?
+KROHN: Мої вітання, {name}! Я з нетерпінням чекав на тебе! То що, як пройшов наш дорогоцінний експеримент?
+
+# 95deb6f
+; {name}: Here is the report my colleague Lexi…[i] I mean, Alexis filled in for you. 
+{name}: Ось звіт, котрий моя колега Лексі…[i] тобто Алексіс підготувала для вас.
+
+# 62bcaa82
+; KROHN: Good, very good! Don't be shy, hand it in!
+KROHN: Чудово, дуже добре! Не соромся, давай його сюди!
+
+# 95c2c5cc
+; He start inspecting the report
+Він почав перевіряти звіт
+
+# 84bc66d5
+; KROHN: Hm…[i] So you have no memory of the last entertaining night plus you've even forgotten some information about your own self...
+KROHN: Так…[i] Отже, ти не пам’ятаєш ані розваг минулої ночі, ані навіть дещо про себе…
+
+# c7b066ca
+; KROHN: I would definitely like to clear up a few things. Let's do a tiny test to estimate your awareness of our time, this city, current world order and other boring stuff. Don't you worry, it won't take long.
+KROHN: Я хотів би лише прояснити кілька деталей. Нумо, проведемо маленький тест, щоб оцінити твою обізнаність про сьогодення, це місто, чинний світоустрій та інші нудні речі. Не переймайся, це не займе багато часу.
+
+# 6b045423
+; {name}: Sure, I guess…
+{name}: Добре, напевно...
+
+# 6da4957d
+; KROHN: Hmm...[i] From what I see you're actually still very well-orientated in your surroundings.
+KROHN: Хм...[i] Згідно з тим, що я побачив, ти досі достатньо добре орієнтуєшся у своєму оточенні.
+
+# 30c84494
+; KROHN: What a result, sweetheart...[i] Your world perception have actually blunted even more than I would expect.
+KROHN: Оце так результат, серденько...[i] Твоє світосприйняття притупилося навіть більше, ніж я очікував.
+
+# d1a78a0c
+; KROHN: That's pretty much everything I needed to know. Well, thank you for such a self-sacrificial participation in my research, darling! Now give me the leftovers of the injection and we'll proceed to your desired payment.
+KROHN: Загалом це все, що мені треба було знати. Що ж, дякую тобі за таку самовіддану участь у моїх дослідженнях, любий! Тепер віддай мені залишки ін’єкції, і ми перейдемо до вашої бажаної оплати.
+
+# 4523a0d0
+; {name}: Um…[i] I believe Alexis said nothing about the leftovers to me... At least I don't have any with me.
+{name}: Кхм…[i] Здається, Алексіс нічого не казала мені про залишки… Принаймні, у мене їх із собою немає.
+
+# 1aeca716
+; KROHN: What do you mean you don't have it? Were you two planning on just leaving the rest to yourself?!
+KROHN: Що означає “немає”? Може ви двоє взагалі планували залишити решту собі?!
+
+# ce7342e3
+; {name}: I mean… I have no idea, because your injection erased all my valuable memories. Speaking of which, weren't you supposed to neutralise this effect..?
+{name}: Ну, власне… Я й гадки не маю, бо ваша ін’єкція стерла всі мої цінні спогади. Щодо цього, хіба ви не повинні були нейтралізувати цей ефект..?
+
+# 5f1748d4
+; KROHN: I can't reverse the reaction without the injection, you dummy! I need the exact same formula that was used on your silly nervous system to create an antidote!
+KROHN: Я не маю змоги запустити зворотну реакцію без ін’єкції, нетямо! Мені потрібна точно та формула, яку ми використували на твоїй дурнуватій нервовій системі, щоб витворити антидот!
+
+# ec7f1932
+; KROHN: I am pausing our communication here until you bring it to me!
+KROHN: Я призупиняю наше спілкування, допоки ти мені її не повернеш!
+
+# b84e2c85
+; {name}: Lexi? Mind explaining to me where is the remaining injection I was supposed to bring to Krohn?
+{name}: Лексі? Чи не могла б ти мені пояснити, де залишки ін’єкції, що я мав принести Крону?
+
+# 88e0a516
+; LEXI: Shit...[i] My bad, {name}. Hoped he wouldn't ask for it.
+LEXI: Халепа...[i] Моя провина, {name}. Сподівалася, що він не попросить про це.
+
+# 8687e0a7
+; LEXI: You see, I need this stuff. If I manage to inject my collectors with it somehow, I will be free from my debts. ALL of them. Do you even realise how strong it is?
+LEXI: Розумієш, мені необхідна ця річ. Якщо мені вдасться якимось чином дістатися з нею до своїх колекторів, я буду вільна від своїх боргів. УСІХ. Ти хоч усвідомлюєш потужність цієї зброї?
+
+# b2385bf9
+; {name}: Hell yeah, I do! Because I am under its effect, remember? And if you don't give it to me, this stupid vendor won't be able to retrieve my memories!
+{name}: Так, дідько, я усвідомлюю! Тому що я знаходжуся під її дією, пам’ятаєш?! І якщо ти не віддаш її мені, цей божевільний виробник не зможе повернути мені мої спогади!
+
+# 3f0b4a0
+; LEXI: Relax, {name}-boy! I already have a plan, actually. But I also have plenty of things to do at the moment so you'll have to do everything yourself. Sorry.
+LEXI: Розслабся, хлопче! Насправді я вже маю план. Але наразі я також маю багато справ, тож тобі доведеться зробити все самому. Вибачай.
+
+# a5138c33
+; LEXI: I left the injection in my apartment. Text me when you're there and I'll open the door for you remotely. You'll find all we need in the sliding drawer. Take the injection and fill an empty syringe from the drawer with a half of it. Then go and bring the actual leftovers to the Krohn-dude. Okay?
+LEXI: Я лишила шприци у своїй квартирі. Напиши, коли будеш на місці — я дистанційно відчиню тобі двері. Ти знайдеш усе, що нам потрібно, у окремій висувній шухлядці. Візьмеш ін’єкцію та наповниш нею порожній шприц із тієї ж шухляди наполовину. Тоді піди і принеси вже справжні залишки цьому бевзню Крону. Гаразд?
+
+# 70fa2ca4
+; {name}: You are extremely troublesome, Lexi.
+{name}: Ти — самі клопоти, Лексі.
+
+# abf513c0
+; LEXI: Come on now, {name}-boy. Don't make our payment wait for any longer, will ya?
+LEXI: Ну досі, хлопче. Не змушуй нашу зарплатню чекати й надалі, добре?
+
+# e8d73786
+; Krohn isn`t here, I think he left.
+Крона тут нема думаю він пішов
+
+# 3ae73f6a
+; {name}: Krohn? I brought you the remaining injection!
+{name}: Кроне? Я повернувся із залишками ін'єкції!
+
+# 7c769000
+; {name}: ...
+{name}: ...
+
+# 95162dc2
+; What the heck? No one is here!
+Якого біса? Тут нікого немає!
+
+# 1e0a694
+; *calling Lexi*
+*звоню Лексі*
+
+# a9ea3b97
+; {name}: You can't imagine how full I am of this whole situation already, Lexi. This Krohn-guy isn't at his place! What should I do now?
+{name}: Ти не можеш собі уявити, наскільки з мене вже досить всієї цієї ситуації, Лексі. Цього дурного Крона нема на робочому місці! І що мені робити тепер?
+
+# b2f3e8f0
+; {name}: You're such a kid, {name}-boy. Those vendors are busy fellas, you know. I have his number though. I'm gonna call right now and invite him to come visit our office, if he wants his injection back, 'cause I am already here, so you can come over and we'll finish this mess at once.
+
+# 5a2d1aa8
+; {name}: Such a mess for sure. I totally feel like a delivery guy today. Leaving the vendor to you. Will meet you at the spot.
+{name}: Дійсно, той ще безлад. Я сьогодні взагалі почуваю себе якимось кур’єром. Лишаю виробника на тебе. Зустрінемося на місці.
+
+# 7c16d6dd
+; LEXI: See ya.
+LEXI: Побачимось.
+
+# 6c2432d5
+;     {name}: Hey there, Krohn.
+{name}: Привіт, Кроне.
+
+# 73e9748f
+;     KROHN: You've actually had the nerve to show up here after what you've done. What an incredible arrogance.
+KROHN: У тебе насправді вистачило нахабності з’явитися тут після того, що ви зробили. Яка неймовірна зухвалість.
+
+# f9bbe1d4
+;     {name}: Just wanted to make sure you're not going to help me if I pay for all the trouble we've caused to you.
+{name}: Просто хотів переконатися, що ти не допоможеш мені, навіть якщо я заплачу за всі незручності, яких ми тобі завдали.
+
+# 55c4b50a
+;     KROHN: Oh trust me, child, you'd be internally indebted to me if you tried to. Be grateful I'm not interested in beating money out of nasty kids. Now get out and never show up here again. And remember — stealing is stealing, whether you use a crowbar, a computer command or that shameless girl of yours who thinks she's outsmarted everyone. You won't get far with this.
+KROHN: О, повір мені, дитино, ти був би моїм довічним боржником, якби спробував. Будьте вдячні, що я не зацікавлений у тому, щоб вибивати гроші з пустотливих дітей. Тепер іди геть і ніколи більше тут не з’являйся. 
+KROHN: І ще я хочу, аби ви запам’ятали: крадіжка залишається крадіжкою, незалежно від того, використовуєте ви лом, комп’ютерну команду чи оту вашу безсоромну дівчину, яка думає, що перехитрила всіх. На цьому далеко не заїдеш.
+
+# 8a216255
+;     KROHN: Good luck with finding someone skilled enough to help you with your amnesia.
+KROHN: Успіхів у пошуку когось достатньо вмілого, щоб допомогти тобі з цією амнезією.
+
+# 6c2432d5
+;     {name}: Hey there, Krohn.
+{name}: Привіт, Кроне.
+
+# 4ea664b1
+;     KROHN: Look who's here! The level-headed man who sets his priorities right!
+KROHN: Тільки-но подивіться, хто тут! Наша вдумлива людинка, що правильно розставляє пріоритети!
+
+# 5ffde88a
+;     {name}: I'd rather you leave that already and get straight to the point.
+{name}: Краще облиш це вже й перейдемо безпосередньо до справи.
+
+# 747071ec
+;     KROHN: Ahem…[i] Understandable, sweetheart. I already have everything ready for you. There is your well-deserved money. Thank you again for your invaluable participation.
+KROHN: Кхм...[i] Зрозумів тебе, серденько. У мене вже все готово. Ось ваші чесно заслужені гроші. Ще раз висловлюю тобі вдячність за безцінну участь.
+
+# 18be302e
+;     {name}: How much time do you need to heal my brain or whatever?
+{name}: Скільки тобі потрібно часу, щоб вилікувати мій мозок чи в чому там у мене виникло порушення?
+
+# ce5a235a
+;     KROHN: I'd say from a couple of weeks to a month, if my self-assessment is correct, which I'm sure it is.
+KROHN: Я би сказав від двох тижнів до місяця, якщо не помиляюся в самооцінці, а я впевнений, що це неможливо
+
+# e82a4226
+;     {name}: I will only pay for the treatment in case it works out for me.
+{name}: Я розплачуся за лікування тільки в тому випадку, якщо воно мені допоможе.
+
+# 442bcbbf
+;     KROHN: How very cautious of you! I'm fine with that, though. I see your determination and trust in your decency. I'll begin my preparations right away. Gonna keep in touch with you, so stay in contact, will you?
+KROHN: Як обережно з твого боку! Однак, мені це підходить. Я бачу твою рішучість та не сумніваюся в порядності. Я почну підготування вже негайно. Буду підтримувати з тобою контакт, тож залишайся на зв’язку!
+
+# 7a91fca4
+;     {name}: I will. Thank you for your service.
+{name}: Буду. Дякую за працю
+
+# 24500c25
+;     KROHN: Pleasure doing business with you, darling.
+KROHN: Приємно мати з тобою справу, дорогенький.
+
+# 6c2432d5
+;     {name}: Hey there, Krohn.
+{name}: Привіт, Кроне.
+
+# 73e9748f
+;     KROHN: You've actually had the nerve to show up here after what you've done. What an incredible arrogance.
+KROHN: У тебе насправді вистачило нахабності з’явитися тут після того, що ви зробили. Яка неймовірна зухвалість.
+
+# f9bbe1d4
+;     {name}: Just wanted to make sure you're not going to help me if I pay for all the trouble we've caused to you.
+{name}: Просто хотів переконатися, що ти не допоможеш мені, навіть якщо я заплачу за всі незручності, яких ми тобі завдали.
+
+# 77cd4527
+;     KROHN: Oh trust me, child, you'd be internally indebted to me if you tried to. Be grateful I'm not interested in beating money out of nasty kids. It was partly my own mistake, after all…
+KROHN: О, повір мені, дитино, ти був би моїм довічним боржником, якби спробував. Будьте вдячні, що я не зацікавлений у тому, щоб вибивати гроші з пустотливих дітей. Зрештою, частково це була моя власна помилка…
+
+# 431aab8
+;     {name}: What do you mean by that?
+{name}: Що ти маєш на увазі?
+
+# ba8c3236
+;     KROHN: Ah, you sure are testing my nerves.
+KROHN: Ох, ти насправді випробовуєш мої нерви.
+
+# 39aaf8cb
+;     KROHN: You see, it happens to be that I don't have any injection of that particular formula we've used on you left. The same day I gave the test sample to you, I accidentally broke the one I left for myself right there, where you are standing.
+KROHN: Розумієш, так склалося, що в мене не лишилося жодної ін’єкції тієї конкретної формули, яку ми використали на тобі. Того ж самого дня, коли я віддав вам зразок, я випадково розбив той, який залишив собі — прямо на тому місці, де ти стоїш.
+
+# bd2a2b42
+;     KROHN: I wasn't even sad about it, though. You can only imagine how many samples of this injection I've made throughout these months. One more or less was of no importance — who would've thought that the one I've lost would turn out to be the most successful.
+KROHN: Проте я навіть не засмутився через це. Ти навіть не можеш собі уявити, скільки проб цієї ін’єкції я зробив за ці місяці. Одним. більше, одним менше, це не мало значення — хто б міг подумати, що саме той, який я втратив, виявиться найуспішнішим
+
+# 1112bcb
+;     KROHN: Now get out and never show up here again.
+KROHN: Тепер іди геть і ніколи більше тут не з’являйся.
+
+# dc620a37
+;     KROHN: And good luck with finding someone skilled enough to help you with your amnesia
+KROHN: Успіхів у пошуку когось достатньо вмілого, щоб допомогти тобі з цією амнезією.
